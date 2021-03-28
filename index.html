@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T.G Portfolio</title>
+	<style type="text/css">
+			html{
+				position: center;
+				background-image: url(https://images.squarespace-cdn.com/content/v1/5c912fc14d8711855775d266/1563841299314-QFSBBT3OLVQUSWT4P3VR/ke17ZwdGBToddI8pDm48kL0mWSpxM0MmUzJFNjHqLOIUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcIL7zs5xscvPh-hJwYitlH28CqA5flcOXfycBmRYdmNWndx0SBYXGElB-OliRy4u0/ranger-4df6c1b6.png?format=2500w);
+				background-repeat:no-repeat;
+				background-size: cover;
+				height:100%;
+				width:100%;
+				}
+				.dop{
+					list-style-position: inside;
+					text-align: right;
+					color:red;
+					font-size: 1.3vw;
+					margin-right: 10px;
+				 }
+				#one{
+				 	font-size: 1.3vw;
+				 	font-weight: 800;
+				 	color:white;
+				 }
+				#icon{
+					height:4em;
+				}
+				#icon img{
+					margin-top:0px;
+					height:80%;
+					width:4%;
+					border-radius: 50%;
+					margin-right: 8px;
+				}
+				#mySidenav a {
+				  position:absolute; 
+				  left: -85px; 
+				  transition: 0.5s;
+				  padding: 15px;
+				  width: 100px;
+				  text-decoration: none;
+				  font-size: 20px;
+				  color: white;
+				  border-radius: 0 5px 5px 0;
+				}
+
+				#mySidenav a:hover {
+				  left: 0;
+				  text-align: left;
+				}
+				#home i{
+					height:100%;
+					width:30%;
+
+				}
+
+				#home{
+				  top: 20px;
+				  background-color: #4CAF50;
+				}
+
+				#about {
+				  top: 80px;
+				  background-color: #2196F3;
+				}
+
+				#projects {
+				  top: 140px;
+				  background-color: #f44336;
+				}
+				#contact {
+				  top: 200px;
+				  background-color: #555
+				}
+
+				a i{
+					float:right;
+					height:25%;
+					width:30%;
+				}
+				.horizontally {
+				 height: 12vw;	
+				 position: relative;
+				 color: black;
+				 margin-top: 15%;
+				 text-shadow: 2px 6px 8px #FF0000;
+				}
+				.horizontally p {
+				 position: absolute;
+				 font-size-adjust:0.2;
+				 font-size: 7.5vw;
+				 width: 70%;
+				 height: 100%;
+				 font-weight: 800;
+				 margin: 0;
+				 text-align: center;
+				 -moz-transform:translateX(5%);
+				 -webkit-transform:translateX(5%);	
+				 transform:translateX(5%);	
+				 -moz-animation: horizontally 15s linear infinite alternate;
+				 -webkit-animation: horizontally 15s linear infinite alternate;
+				 animation: horizontally 5s linear infinite alternate;
+				}
+				@-moz-keyframes horizontally {
+				 	0%   { -moz-transform: translateX(5%); }
+				 	100% { -moz-transform: translateX(40%); }
+				}
+				@-webkit-keyframes horizontally {
+				 	0%   { -webkit-transform: translateX(5%); }
+				 	100% { -webkit-transform: translateX(40%); }
+					}
+				@keyframes horizontally {
+				 0%   { 
+				 -moz-transform: translateX(5%);
+				 -webkit-transform: translateX(5%);
+				 transform: translateX(5%); 		
+				 }
+				 100% { 
+				 -moz-transform: translateX(40%);
+				 -webkit-transform: translateX(40%); 
+				 transform: translateX(40%); 
+				 }
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+		<div id="icon">
+			<a href="https://www.facebook.com/tushar.gautam.9889"><img src="https://icons.iconarchive.com/icons/danleech/simple/256/facebook-icon.png"  href="https://www.facebook.com/tushar.gautam.9889"align="right"></a>
+			<a href="https://www.instagram.com/tushargautam79/"><img src="https://scx2.b-cdn.net/gfx/news/hires/2019/instagram.jpg" align="right"></a>
+			<a href="https://www.linkedin.com/in/tushar-gautam-9584661b2/"><img src="https://lh3.googleusercontent.com/fqYJHtyzZzA4vacRzeJoB93QNvA5-mvR-8UB5oVLxdYDSTpfLp_KgYD4IqVGJUgFEJo" align="right"></a>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		  <a href="Portfolio.html" id="home">Home<i  align="right" class="fa fa-arrow-circle-left" style="font-size:210%;"></i></a>
+		  <a href="Portfolio1.html" id="about">About<i class="fa fa-arrow-circle-left" style="font-size:48px;"></i></a>
+		  <a href="Portfolio3.html" id="projects">Projects<i class="fa fa-arrow-circle-left" style="font-size:48px;"></i></a>
+		  <a href="Portfolio2.html" id="contact">Victory<i class="fa fa-arrow-circle-left" style="font-size:48px;"></i></a>
+		</div>
+		<div class="horizontally">
+			  <p>I 'm 
+			  	<span id ="slider">Tushar Gautam</span>
+			  </p>
+			  <P id="call"></P>
+		</div>
+		<div class="right" >
+			<ul class="dop">
+				<li id="one"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			</div>
+		</div>
+		<div id="about"></div>
+	<script type="text/javascript" src="Portfolio.js"></script>
+	<script type="text/javascript" src="portfolio_main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
