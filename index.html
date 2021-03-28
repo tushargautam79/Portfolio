@@ -154,8 +154,45 @@
 			</div>
 		</div>
 		<div id="about"></div>
-	<script type="text/javascript" src="Portfolio.js"></script>
-	<script type="text/javascript" src="portfolio_main.js"></script>
+	<script type="text/javascript">
+	
+		var front=document.querySelector("#slider");
+		var front1=["a Developer","an Engineer","an IITian","Tushar Gautam","a Cultural Secretary","Chairperson of Reano'21"];
+		var coloy=["white","blue","green","orange"];
+		var i=0;
+		var col;
+		var p=setInterval(function()
+		{
+		  front.innerText=front1[i];
+		  front.style.color=coloy[i];
+		  if(i=='5')
+		  {
+		    i=-1;
+		  }
+		  i++;
+		},2000);
+	</script>
+	<script type="text/javascript" src="portfolio_main.js">
+		var tar=0;
+		var body=document.querySelector("body");
+		body.addEventListener('scrollstart', function()
+		{
+			if(body.scrollTop>0)
+			{
+				tar--;
+			}
+			else if(body.scrollDown>60)
+			{
+				tar++;
+			}
+			else
+			{}
+			if(tar<0)
+			{
+				tar=3;
+			}
+		});	
+	</script>
 </body>
 </html>
 
